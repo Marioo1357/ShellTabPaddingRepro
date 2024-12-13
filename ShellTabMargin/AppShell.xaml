@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="ShellTabMargin.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:ShellTabMargin"
+    Title="ShellTabMargin"
+    Shell.FlyoutBehavior="Flyout">
+
+    <TabBar Route="Home">
+        <Tab
+            Title="Tab1"
+            Icon="dotnet_bot.png"
+            Route="Tab1">
+            <ShellContent>
+                <ShellContent.ContentTemplate>
+                    <DataTemplate>
+                        <ContentPage>
+                            <Label Text="Tab1" />
+                        </ContentPage>
+                    </DataTemplate>
+                </ShellContent.ContentTemplate>
+            </ShellContent>
+        </Tab>
+        <Tab
+            Title="Tab2"
+            Icon="dotnet_bot.png"
+            Route="Tab2">
+            <ShellContent>
+                <ShellContent.ContentTemplate>
+                    <DataTemplate>
+                        <ContentPage>
+                            <Label Text="Tab2" />
+                        </ContentPage>
+                    </DataTemplate>
+                </ShellContent.ContentTemplate>
+            </ShellContent>
+        </Tab>
+        <Tab
+            Title="Tab3"
+            Icon="dotnet_bot.png"
+            Route="Tab3">
+            <ShellContent>
+                <ShellContent.ContentTemplate>
+                    <DataTemplate>
+                        <ContentPage>
+                            <Label Text="Tab3" />
+                        </ContentPage>
+                    </DataTemplate>
+                </ShellContent.ContentTemplate>
+            </ShellContent>
+        </Tab>
+        <Tab
+            Title="Tab4"
+            Icon="dotnet_bot.png"
+            Route="Tab4">
+            <ShellContent>
+                <ShellContent.ContentTemplate>
+                    <DataTemplate>
+                        <ContentPage>
+                            <Label Text="Tab4" />
+                        </ContentPage>
+                    </DataTemplate>
+                </ShellContent.ContentTemplate>
+            </ShellContent>
+        </Tab>
+    </TabBar>
+
+</Shell>
