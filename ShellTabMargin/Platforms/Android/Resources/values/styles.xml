@@ -2,5 +2,7 @@
 <resources>
     <style name="Maui.CustomStyle" parent="Maui.MainTheme.NoActionBar">
         <item name="maui_edgetoedge_optout">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
     </style>
 </resources>

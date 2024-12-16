@@ -2,6 +2,7 @@
 using Android.Content.PM;
 using Android.OS;
 using Android.Views;
+using Color = Android.Graphics.Color;
 
 namespace ShellTabMargin;
 
@@ -17,5 +18,6 @@ public class MainActivity : MauiAppCompatActivity
         
         Window.AddFlags(WindowManagerFlags.TranslucentNavigation);
         Window.AddFlags(WindowManagerFlags.TranslucentStatus);
+        Window.SetStatusBarColor(Color.Transparent);
     }
 }
