@@ -9,7 +9,8 @@ public class ShellTabRenderer : ShellRenderer
 {
     protected override IShellBottomNavViewAppearanceTracker CreateBottomNavViewAppearanceTracker(ShellItem shellItem)
     {
-        return new CustomShellBottomNavViewAppearanceTracker(this, shellItem);
+        return base.CreateBottomNavViewAppearanceTracker(shellItem);
+        //return new CustomShellBottomNavViewAppearanceTracker(this, shellItem);
     }
 }
 

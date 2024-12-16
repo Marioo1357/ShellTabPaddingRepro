@@ -12,12 +12,10 @@ public class MainActivity : MauiAppCompatActivity
 {
     protected override void OnCreate(Bundle? savedInstanceState)
     {
+        SetTheme(Resource.Style.Maui_CustomStyle);
         base.OnCreate(savedInstanceState);
         
-        Window.AddFlags(WindowManagerFlags.LayoutNoLimits);
         Window.AddFlags(WindowManagerFlags.TranslucentNavigation);
         Window.AddFlags(WindowManagerFlags.TranslucentStatus);
-        Window.DecorView.SetFitsSystemWindows(false);
-        Window.Attributes.LayoutInDisplayCutoutMode = LayoutInDisplayCutoutMode.Always;
     }
 }
